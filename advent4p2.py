@@ -38,9 +38,9 @@ def is_valid_info(info_str):
                 info_dict['pid'].isdigit() and len(info_dict['pid']) == 9
             
 
-# test = {"60in", "190cm", "190in",'190'}
-# for i in test:
-#     print(is_height(i))
+test = {"60in", "190cm", "190in",'190'}
+for i in test:
+    print(is_height(i))
 
 
 with open('adv4_input.txt') as input_handle:
