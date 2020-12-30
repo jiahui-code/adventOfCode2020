@@ -15,11 +15,11 @@ with open('short.txt') as f_hand:
             # check list not include the last i element, so i-1 element is the one
             print(in_list[i-1])
             break
-    FOUND, NUM = i-1, in_list[i-1]
-    rvs_lst = in_list[FOUND-1::-1]
+    FOUND, NUM = i-1, in_list[i-1] # answer from Q1
+    rvs_lst = in_list[FOUND-1::-1] # reverse list from start to Q1 answer number
     for i in range(len(rvs_lst)):
         tot, j = rvs_lst[i], i
-        while tot < NUM:
+        while tot < NUM:  # add one previous number if not exceed tartget
             j += 1
             tot += rvs_lst[j]
         if tot == NUM:
